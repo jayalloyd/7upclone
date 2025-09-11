@@ -3,7 +3,7 @@
 Project Overview
 This project is a front-end clone of a section of the official 7UP website, built to demonstrate skills in modern web development using fundamental HTML and CSS. The goal was to replicate the visual design, layout, and responsiveness of the original site's hero sections and fixed navigation bar.
 
-Live Demo:  jayalloyd.github.io/7upclone/
+Live Demo:  [jayalloyd.github.io/7upclone/](https://jayalloyd.github.io/7upclone/)
 
 Features
 
