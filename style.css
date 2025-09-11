@@ -4,15 +4,15 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* A modern best practice */
+   
 }
 
-/* Base Styles */
+
 .site-header {
     width: 100%;
 }
 
-/* Navigation Bar */
+
 .nav {
     background-color: #16dcb8;
     height: 120px;
@@ -25,10 +25,9 @@ html {
     justify-content: space-between;
     border-bottom: white solid 1px;
     z-index: 1000;
-    /* Use z-index to ensure it stays on top of other content */
 }
 
-/* Logo and links spacing */
+
 .logo-link {
     padding-left: 2.5rem;
 }
@@ -41,7 +40,6 @@ html {
     padding: 0;
     margin-right: 5rem;
     align-items: center;
-    /* To center the li items vertically */
 }
 
 .nav-links li {
@@ -60,7 +58,7 @@ html {
     text-decoration: underline;
 }
 
-/* Social Icons */
+
 .social-icons img {
     height: 1.8rem;
     width: auto;
@@ -85,7 +83,7 @@ html {
     font-weight: 300;
     font-size: 3.625rem;
     margin-bottom: 2rem;
-    /* Spacing between title and button */
+    
 }
 
 .hero-button {
@@ -103,7 +101,7 @@ html {
 }
 
 .main-content {
-    /* Push the content down to clear the fixed navbar */
+    
     padding-top: 120px;
 }
 
@@ -118,7 +116,7 @@ html {
     display: block;
 }
 
-/* Generic Hero Overlay Styles */
+
 .hero-content-overlay {
     position: absolute;
     top: 50%;
@@ -127,7 +125,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Use justify-content instead of justify-items */
+    justify-content: center; 
     height: 165px;
     width: 650px;
     padding: 2rem 4rem;
@@ -173,4 +171,153 @@ text-decoration: underline;
 
 p{
     color:white;
+}
+
+@media (max-width: 992px) {
+   
+    .logo-link {
+        padding-left: 1.5rem;
+    }
+
+    .nav-links {
+        margin-right: 2rem;
+    }
+
+    .nav-links li {
+        margin-right: 1.5rem;
+    }
+
+    .social-icons img {
+        height: 1.5rem;
+    }
+
+    
+    .hero-text-content {
+        left: 5%;
+        top: 40%; 
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-button {
+        width: 10rem;
+        height: 2.5rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-right: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0; 
+    }
+
+    .nav a.nav-option {
+        font-size: 1.2rem;
+    }
+
+    .social-icons {
+        margin-top: 0.5rem;
+    }
+
+ 
+    .main-content {
+        padding-top: 140px; 
+    }
+
+    
+    .hero-text-content {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        text-align: center;
+        
+        white-space: nowrap;
+    }
+    
+    .hero-title br {
+      display: none; 
+    }
+
+    
+    .hero-content-overlay {
+        width: 90%; 
+        height: auto; 
+        padding: 1.5rem 1rem;
+        border-radius: 20px;
+    }
+
+    .hero-title-overlay {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .hero-button-overlay {
+        padding: 0.7rem 1.2rem;
+        border-width: 0.2rem;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    
+    .logo-link {
+      padding-left: 0;
+    }
+    .nav {
+      padding: 0.5rem 0;
+    }
+
+    
+    .hero-title {
+        font-size: 1.8rem; 
+    }
+
+    .hero-button {
+        width: 9rem;
+        height: 2.2rem;
+        font-size: 0.9rem;
+    }
+
+   
+    .hero-content-overlay {
+        padding: 1rem 0.5rem;
+    }
+
+    .hero-title-overlay {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 0.8rem;
+    }
 }
