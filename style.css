@@ -68,24 +68,7 @@ html {
     vertical-align: middle;
 }
 
-/* Main Content and Hero Section */
-.main-content {
-    /* Push the content down to clear the fixed navbar */
-    padding-top: 120px;
-}
 
-.hero-section {
-    position: relative;
-    width: 100%;
-}
-
-.hero-image-container img {
-    width: 100%;
-    height: auto;
-    /* Correct way to handle image size */
-    display: block;
-    /* Removes any browser-specific spacing below the image */
-}
 
 .hero-text-content {
     position: absolute;
@@ -118,99 +101,57 @@ html {
     text-align: center;
     outline: none;
 }
-.hero-section-secondary{
-position:relative;
-width:100%;
 
+.main-content {
+    /* Push the content down to clear the fixed navbar */
+    padding-top: 120px;
 }
-.hero-content-second{
+
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Generic Hero Overlay Styles */
+.hero-content-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Use justify-content instead of justify-items */
     height: 165px;
     width: 650px;
     padding: 2rem 4rem;
     background-color: rgba(9, 101, 46, 0.85);
     font-weight: bold;
     border-radius: 100px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  transform: translate(-50%, -50%);
-
-
 }
 
-.hero-title-second{
-    position: absolute;
+.hero-title-overlay {
     color: rgb(225, 218, 218);
-    top:12px;
+    margin-bottom: 1rem; /* Use a margin instead of absolute positioning */
 }
-.hero-description{
-    position:absolute;
-    margin-top: 0.5 rem;
-    color:white;
-    margin-bottom: 5rem;
-  
-}
-.hero-button-second{
-    margin-top: 3rem; /* Add some space above the button */
-    padding: 0.8rem 1.5rem;
-    background-color:#0d6e5a;
+
+.hero-description {
     color: white;
-    border: none;
+    text-align: center; /* Center the text inside the flex container */
+    margin-bottom: 1.5rem;
+}
+
+.hero-button-overlay {
+    padding: 0.8rem 1.5rem;
+    background-color: #0d6e5a;
+    color: white;
+    border: solid white 0.3rem;
     border-radius: 50px;
     cursor: pointer;
-   border: solid white 0.3rem;
-}
-.hero-section-third{
-position:relative;
-width:100%;
-
-}
-.hero-content-third{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 165px;
-    width: 650px;
-    padding: 2rem 4rem;
-    background-color: rgba(9, 101, 46, 0.85);
-    font-weight: bold;
-    border-radius: 100px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  transform: translate(-50%, -50%);
-
-
-}
-
-.hero-title-third{
-    position: absolute;
-    color: rgb(225, 218, 218);
-    top:12px;
-}
-.hero-description-third{
-    position:absolute;
-    margin-top: 0.5 rem;
-    color:white;
-    margin-bottom: 5rem;
-  
-}
-.hero-button-third{
-    margin-top: 3rem; /* Add some space above the button */
-    padding: 0.8rem 1.5rem;
-    background-color:#0d6e5a;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-   border: solid white 0.3rem;
 }
