@@ -1,8 +1,10 @@
 /* Global Reset for better consistency across browsers */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* A modern best practice */
+    box-sizing: border-box;
+    /* A modern best practice */
 }
 
 /* Base Styles */
@@ -22,13 +24,15 @@ body, html {
     align-items: center;
     justify-content: space-between;
     border-bottom: white solid 1px;
-    z-index: 1000; /* Use z-index to ensure it stays on top of other content */
+    z-index: 1000;
+    /* Use z-index to ensure it stays on top of other content */
 }
 
 /* Logo and links spacing */
 .logo-link {
     padding-left: 2.5rem;
 }
+
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -36,8 +40,10 @@ body, html {
     margin: 0;
     padding: 0;
     margin-right: 5rem;
-    align-items: center; /* To center the li items vertically */
+    align-items: center;
+    /* To center the li items vertically */
 }
+
 .nav-links li {
     margin-right: 2rem;
 }
@@ -49,6 +55,7 @@ body, html {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 .nav a.nav-option:hover {
     text-decoration: underline;
 }
@@ -66,14 +73,18 @@ body, html {
     /* Push the content down to clear the fixed navbar */
     padding-top: 120px;
 }
+
 .hero-section {
     position: relative;
     width: 100%;
 }
+
 .hero-image-container img {
     width: 100%;
-    height: auto; /* Correct way to handle image size */
-    display: block; /* Removes any browser-specific spacing below the image */
+    height: auto;
+    /* Correct way to handle image size */
+    display: block;
+    /* Removes any browser-specific spacing below the image */
 }
 
 .hero-text-content {
@@ -90,7 +101,8 @@ body, html {
     color: white;
     font-weight: 300;
     font-size: 3.625rem;
-    margin-bottom: 2rem; /* Spacing between title and button */
+    margin-bottom: 2rem;
+    /* Spacing between title and button */
 }
 
 .hero-button {
@@ -106,33 +118,47 @@ body, html {
     text-align: center;
     outline: none;
 }
-.greenBackground{
-   position: relative;
-    
-    
-    
-    
-    top:50%;
-    left:40%;
-    
+.hero-section-secondary{
+position:relative;
+width:100%;
+
+}
+.hero-content-second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 165px;
     width: 650px;
-    margin: 220px 400px;
+    padding: 2rem 4rem;
     background-color: rgba(9, 101, 46, 0.85);
     font-weight: bold;
-    text-indent: 25px;
     border-radius: 100px;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
     justify-items: center;
+  transform: translate(-50%, -50%);
 
-    
 }
 
-.hero-second-text .first{
-position:absolute;
-color:white;
-
+.hero-title-second{
+    position: absolute;
+    color: rgb(225, 218, 218);
+    
+}
+.hero-description{
+    position:absolute;
+    margin-top: 0.5 rem;
+    color:white;
+}
+.hero-button-second{
+    margin-top: 2rem; /* Add some space above the button */
+    padding: 0.8rem 1.5rem;
+    background-color:#0d6e5a;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
